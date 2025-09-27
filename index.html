@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>List Band/Grup Favorit</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f8f9fa;
+      text-align: center;
+      margin: 0;
+      padding: 0;
+    }
+    h1 {
+      background: #5ea9f4;
+      color: white;
+      padding: 20px 0;
+      margin: 0;
+    }
+        h2 {
+      background: #5ea9f4;
+      color: white;
+      padding: 20px 0;
+      margin: 0;
+    }
+    .container {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 20px;
+      padding: 20px;
+      justify-content: center; /* ini bikin item di baris terakhir ketengah */
+    }
+    .card.identity {
+      text-align: left;
+      padding: 15px;
+      background: #ffffff;
+      font-size: 16px;
+      color: rgb(40, 102, 225);
+    }
+    .card {
+      background: rgb(174, 204, 248);
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(19, 18, 18, 0.2);
+      overflow: hidden;
+      transition: transform 0.3s;
+    }
+    .card:hover {
+      transform: scale(1.03);
+    }
+    .card img {
+      width: 100%;
+      height: 190px;
+      object-fit: cover;
+    }
+    .card p {
+      margin: 9px;
+      font-weight: bold;
+    }
+    iframe {
+      width: 100%;
+      height: 200px;
+      border: none;
+    }
+    footer {
+      background: #2c3e50; /* warna gelap biar matching sama header */
+      color: white;
+      text-align: center;
+      padding: 15px 0;
+      margin-top: 30px;
+    }
+
+    /* Responsive biar di HP jadi 1 kolom, tablet 2 kolom */
+    @media (max-width: 1024px) {
+      .container {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+    @media (max-width: 600px) {
+      .container {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <h1>List Boy Grup / Band Favorit</h1>
+  <h2>Pemrograman Web Per 3</h2>
+
+<div class="card identity">
+  <p><strong>Nama:</strong>Agriani Guningsih</p>
+  <p><strong>NIM :</strong>231011403007</p>
+  <p><strong>Kelas:</strong>05TPLE019</p>
+</div>
+
+  <div class="container">
+    <!-- Band 1 -->
+    <div class="card">
+      <img src="https://i.pinimg.com/736x/60/d9/a6/60d9a620caa1d8d62262079b37fae1d3.jpg" alt="BoyNextDoor">
+      <p>BOYNEXTDOOR</p>
+      <iframe src="https://www.youtube.com/embed/Dbxfo8YBkYE?si=5h8sTm_OQQFm3u3R" allowfullscreen></iframe>
+    </div>
+
+    <!-- Band 2 -->
+    <div class="card">
+      <img src="https://akcdn.detik.net.id/community/media/visual/2024/01/04/tws-7.jpeg?w=700&q=90" alt="TWS">
+      <p>TWS</p>
+      <iframe src="https://www.youtube.com/embed/4eAF2boGKaA?si=H79E0bZc1GmAD0rO" allowfullscreen></iframe>
+    </div>
+
+    <!-- Band 3 -->
+    <div class="card">
+      <img src="https://i.pinimg.com/1200x/03/6e/45/036e45f8a05fb2a850cb7cb6e1374a6f.jpg" alt="SEVENTEEN">
+      <p>SEVENTEEN</p>
+      <iframe src="https://www.youtube.com/embed/zSQ48zyWZrY?si=5zvVafCQWPdCkGMd" allowfullscreen></iframe>
+    </div>
+
+    <!-- Band 4 -->
+    <div class="card">
+      <img src="https://i.pinimg.com/1200x/d8/df/0b/d8df0bf792ae397190d8e05cdf7f1f99.jpg" alt="TXT">
+      <p>TXT</p>
+      <iframe src="https://www.youtube.com/embed/JzODRUBBXpc?si=M2idCchiCiWlow-x" allowfullscreen></iframe>
+    </div>
+
+    <!-- Band 5 -->
+    <div class="card">
+      <img src="https://i.pinimg.com/1200x/40/45/01/4045017652860c5c5d2fe552fd5b510e.jpg" alt="BACK NUMBER">
+      <p>Back Number</p>
+      <iframe src="https://www.youtube.com/embed/iqEr3P78fz8?si=g2OsZPqesaAB0XQP" allowfullscreen></iframe>
+    </div>
+
+    <!-- Band 6 -->
+    <div class="card">
+      <img src="https://i.pinimg.com/736x/55/5d/b4/555db43ea9adccebc84941f2575afd82.jpg" alt="Ryokuoushoku Shakai">
+      <p>Ryokuoushoku Shakai</p>
+      <iframe src="https://www.youtube.com/embed/v-WcMQbXbKY?si=OyY8PaZzhKrVpuxQ" allowfullscreen></iframe>
+    </div>
+
+    <!-- Band 7 -->
+    <div class="card">
+      <img src="https://i.pinimg.com/736x/e4/f4/28/e4f4288b36df2e34def73130ea1eba1d.jpg" alt="MRS. GREEN APPLE">
+      <p>MRS. GREEN APPLE</p>
+      <iframe src="https://www.youtube.com/embed/m34DPnRUfMU?si=cDNAYnLylPaLNZVl" allowfullscreen></iframe>
+    </div>
+  </div>
+    <footer>
+      <p>Izin Pak, karna sedikit band yang saya suka, jadi saya menggunakan boygrup sebagai tambahannya. Terima kasih.</p>
+    </footer>
+</body>
+</html>
